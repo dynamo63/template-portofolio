@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze|Lobster|Poiret+One|Poppins|Faster+One&display=swap');
+body{
+    background-color: whitesmoke;
+}
+
+/*==============================
+        banner css ====================== */
+
+header{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(19, 18, 18, 0.932)), url('../image/connection-contemporary-data-450035.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+}
+
+header p{
+    color: white;
+}
+
+.first-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-header p > i{
+    color:firebrick;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-right: 4px;
+}
+
+.nav-desktop{
+    display: flex;
+    background-color: white;
+    padding: 4px 0;
+    justify-content: center;
+}
+
+.nav-desktop ul{
+    display: flex;
+}
+
+.nav-desktop ul li{
+    margin-right: 5em;
+}
+
+.nav-desktop ul li > a{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.3em;
+    font-family: 'Grenze', serif;
+}
+
+.nav-desktop ul li > a:hover{
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+.active{
+    color: brown !important;
+}
+
+.introduce{
+    margin-top: 2rem;
+}
+
+.introduce p{
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+}
+
+/*===============================
+                banner mobile config
+                ================================ */
+.nav-wrapper .brand-logo{
+    color:rgba(224, 6, 6, 0.904);
+    font-family: 'Faster One', cursive;
+}
+
+/*==============================
+        service part css ================== */
+
+.skill-bar{
+    background-color: whitesmoke;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(26, 76, 184, 0.815);
+    border-radius: 6px;
+}
+
+.skill-level{
+    background-color: rgba(26, 76, 184, 0.815);
+    width: 100%;
+    height: 3px;
+    border-radius: 6px;
+}
+
+.service-content{
+    background-color: white;
+    padding: 20px 10px !important;
+}
+
+#services {
+    margin-bottom: 3rem;
+}
+
+#services .service-content:nth-child(2n) p{
+    font-family:'Poppins', serif;
+}
+
+h1 span,h4 span{
+    font-family: 'Poiret One', cursive;
+    border-bottom: 2px solid brown;
+}
+
+
+/* ==============================
+        blog css ======================== */
+
+.blog{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to right bottom,rgba(19, 16, 16, 0.582),rgba(19, 18, 18, 0.932)),url('../image/assortment-blur-book-bindings-694740.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog .link a{
+    background:linear-gradient(to right bottom,#ED213A,#93291E);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 1.2em;
+}
+
+.card:hover{
+    box-shadow: 5px 1.5em 10px grey;
+}
+
+/* ======================= 
+        about mobile css 
+            ======================= */
+
+#profile{
+    width: 33.33%;
+    margin: 2em auto;
+    height: 31vw;
+    background-image: url('../image/afro-hair-attractive-beautiful-2171603.jpg');
+    background-size: cover;
+    background-position: left;
+    border-radius: 50%;
+}
+
+
+/* button for scroll home smoothy: css */
+
+#home{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/* ================
+        contact css =============*/
+
+/* label color */
+.input-field label {
+    color: white;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: white;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 2px solid white;
+}
+
+.page-footer{
+    background-image: linear-gradient(to right bottom,rgba(19, 16, 16, 0.582),rgba(19, 18, 18, 0.932)),url('../image/advice-advise-advisor-7096.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-link .right a{
+    margin-right: 1em;
+}
+
+/* 
+    ***********************
+    *                     *
+    *  MEDIA QUERY CSS    *
+    *                     *
+    ***********************
+                            */
+
+@media only screen and (max-width: 700px) {
+    .hide-on-small-only{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .show-on-small {
+      display: block !important;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width:1199px) {
+
+    #blog .container {
+      width: 91%;
+    }
+
+    #services .container{
+        width: 90%;
+    }
+}
+
+/* @media only screen and (min-width:320px) and (max-width:399px){
+    #profile{
+        height: 9rem;
+    }
+}
+
+@media only screen and (min-width:480px){
+    #profile{
+        height: 30vw;
+    }
+}
+
+@media only screen and (max-width:340px){
+    #profile{
+        height: 30vw;
+    }
+} */
